@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour {
 		} else if (stage == 4) {
 			timeUp.position = Vector3.Lerp (timeUp.position, new Vector3 (0f, 0f, -9f), moveSpeed);
 		}
+		if (Input.GetKeyDown (KeyCode.Escape))
+			Application.Quit ();
 	}
 
 	public void NextStage() {

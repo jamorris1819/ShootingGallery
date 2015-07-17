@@ -7,5 +7,7 @@ public class ChangeScene : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonUp (0))
 			Application.LoadLevel (scene);
+		if (Input.GetKeyDown (KeyCode.Escape))
+			Application.Quit ();
 	}
 }
